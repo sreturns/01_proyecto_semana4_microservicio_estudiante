@@ -2,6 +2,12 @@ package com.sinensia.dto;
 
 import java.util.Objects;
 
+/**
+ * Clase que utilizamos para mapear el recurso Curso de nuestro otro
+ * microservicio
+ *
+ * @see com.sinensia.service.InscripcionServiceImpl
+ */
 public class CursoDto {
 
 	private int idCurso;
@@ -14,6 +20,14 @@ public class CursoDto {
 	public CursoDto() {
 	}
 
+	/**
+	 * 
+	 * @param nombre
+	 * @param duracion
+	 * @param precio
+	 * @param disponibilidad
+	 * @param plazas
+	 */
 	public CursoDto(String nombre, int duracion, double precio, String disponibilidad, int plazas) {
 		super();
 		this.nombre = nombre;
